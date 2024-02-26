@@ -2,10 +2,11 @@ import pygame
 
 
 pygame.init()
-screen = pygame.display.set_mode((1280, 720))
+screen = pygame.display.set_mode((1600, 900))
 clock = pygame.time.Clock()
 running = True
 dt = 0
+bg = pygame.image.load("background.png")
 
 
 
@@ -19,7 +20,7 @@ while running:
             running = False
 
     # fill the screen with a color to wipe away anything from last frame
-    screen.fill("purple")
+    screen.blit(bg, (0, 0))
     rect = pygame.Rect(0, 0, 50, 50)
     rect.center = (player_pos)
     pygame.draw.rect(screen, (255,0,0), rect)
