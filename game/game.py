@@ -21,7 +21,7 @@ while running:
 
     # fill the screen with a color to wipe away anything from last frame
     screen.blit(bg, (0, 0))
-    rect = pygame.Rect(0, 0, 50, 50)
+    rect = pygame.Rect(0, 0, 100, 100)
     rect.center = (player_pos)
     pygame.draw.rect(screen, (255,0,0), rect)
 
